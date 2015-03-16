@@ -46,13 +46,24 @@ The BondVis plugin lets you visualize interactions between any pair of atoms you
 Often I find it helpful for my understanding (and for verification) to visualize the bonds between certain atoms that were assigned in docking or any other prediction software. Most software will provide you with information about the atoms that were "connected" to perform the analysis.
 If you run BondVis from the "Plugin" menu, it will ask you to select a "bond info file." 
 ![title](img/bondinfo.png)
-This is just a simple text file that contains the atom numbers of connected atoms in pairs. Those can be separated by spaces, tabs, or commas. An example file with bond information could look like this:  
-<code><pre>1174		1357
+This is just a simple text file that contains the atom numbers of connected atoms in pairs. Those can be separated by spaces or tabs. An example file with bond information could look like this:  
+<code><pre>
+1174		1357
 1175		1358
 1176		1359
 </pre></code>
 When you selected a "bond info" file, BondVis will connect all atom pairs by yellow dashed lines and print out the connected atoms in the command field.
 ![title](img/bondvis.png)
+
+Optionally, a user-defined "bond type" name can be added as a third column to display different bond types in different colors, which can be useful to differentiate between hydrogen bonds and salt bridges, for example.
+
+<code><pre>
+1174     1357     mybondtypeI
+1175     1358     mybondtypeII
+1176     1359     mybondtypeI
+</pre></code>
+
+![title](img/bondvis_bondtype.png)
 
 <br>
 <br>
