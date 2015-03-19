@@ -82,5 +82,6 @@ def draw_bonds(bond_list):
 
 
         cmd.hide("labels")
+    cmd.set("dash_gap", 0.20)
 
 #cmd.extend('load_bonds', load_bonds)
