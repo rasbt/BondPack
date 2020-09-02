@@ -1,7 +1,7 @@
 # 10/24/2013 Sebastian Raschka
 # BondLab PyMOL plugin
 
-from Tkinter import *
+from tkinter import *
 from pymol import cmd
 import sys, zlib, string
 
